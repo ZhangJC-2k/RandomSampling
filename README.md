@@ -41,7 +41,7 @@ There are several arguments to configure both attacks and defenses. `attack_meth
 After setting the arguments, run the following commands:
 ```shell
 cd RandomSampling 
-python Test.py
+python test.py
 ```
 
 ## Cite
