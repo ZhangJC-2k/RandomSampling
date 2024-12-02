@@ -38,7 +38,7 @@ Before running our code, download the necessary pre-trained models and dataset. 
 ## 3.Test
 There are several arguments to configure both attacks and defenses. `attack_method` specifies the chosen attack. `n_iter` and `eot` determine the number of update iterations and EOT (Expectation Over Transformation) samples, respectively. In our experiments, since the surrogate process in an attack might require different purification settings, separate arguments are used for specifying these details. For defense, `def_max_timesteps`, `def_num_denoising_steps`, `def_sampling_method`, and `def_guidance` determine the number of forward steps, the number of denoising steps, the sampling method, and the condition guidance, respectively. For attack, `att_max_timesteps`, `att_num_denoising_steps`, `att_sampling_method`, and `att_guidance` are used.
 
-After setting the parameters, run the following commands:
+After setting the arguments, run the following commands:
 ```shell
 cd RandomSampling 
 python Test.py
