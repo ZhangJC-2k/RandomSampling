@@ -35,8 +35,14 @@ Conceptual illustration of the sampling trajectory of three different diffusion 
 ## 2.Prepare Pretrained models and data
 Before running our code, download the necessary pre-trained models and dataset. For CIFAR-10, we use the diffusion model identical to those in [DiffPure](https://github.com/NVlabs/DiffPure#requirements), which is available in [ScoreSDE](https://github.com/yang-song/score_sde_pytorch). We also use pre-trained classifiers, and for CIFAR-10, you don't need to download the models. After downloading the models and dataset, you must update their path in 'path.py'.
 
-## 3.Prepare Pretrained models and data
+## 3.Test
 There are several arguments to configure both attacks and defenses. `attack_method` specifies the chosen attack. `n_iter` and `eot` determine the number of update iterations and EOT (Expectation Over Transformation) samples, respectively. In our experiments, since the surrogate process in an attack might require different purification settings, separate arguments are used for specifying these details. For defense, `def_max_timesteps`, `def_num_denoising_steps`, `def_sampling_method`, and `def_guidance` determine the number of forward steps, the number of denoising steps, the sampling method, and the condition guidance, respectively. For attack, `att_max_timesteps`, `att_num_denoising_steps`, `att_sampling_method`, and `att_guidance` are used.
+
+After setting the parameters, run the following commands:
+```shell
+cd RandomSampling 
+python Test.py
+```
 
 ## Cite
 If this repo helps you, please consider citing our work:
