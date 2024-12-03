@@ -23,12 +23,12 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 parser = argparse.ArgumentParser(description=globals()['__doc__'])
 parser.add_argument('--seed', type=int, default=0, help='Random seed')
 parser.add_argument('--batch_size', type=int, default=16)
-parser.add_argument('--dataset_size', type=int, default=32)
+parser.add_argument('--dataset_size', type=int, default=512)
 
 # Attack
 parser.add_argument("--attack_method", type=str, default='pgd', choices=['pgd', 'pgd_l2'])
-parser.add_argument('--n_iter', type=int, default=20, help='The nubmer of iterations for the attack generation')
-parser.add_argument('--eot', type=int, default=1, help='The number of EOT samples for the attack')
+parser.add_argument('--n_iter', type=int, default=200, help='The nubmer of iterations for the attack generation')
+parser.add_argument('--eot', type=int, default=5, help='The number of EOT samples for the attack')
 
 # Purification hyperparameters in defense
 parser.add_argument("--def_max_timesteps", type=str, default="1000",
