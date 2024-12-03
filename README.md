@@ -5,9 +5,11 @@
 Jiancheng Zhang, Peiran Dong, Yongyong Chen, Yin-Ping Zhao, Song Guo
 </div>
 
+This is a repo for our work: "**[Random Sampling for Diffusion-based Adversarial Purification](https://arxiv.org/abs/2411.18956)**".
+
 ### News
 
-**2024.11.28 :** Our paper is available on [Arvix](https://arxiv.org/abs/2411.18956) and the code is released here.
+**2024.11.28 :** Our paper is available on Arvix and the code is posted here.
 
 ## Abstract
 
