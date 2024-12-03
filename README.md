@@ -42,17 +42,14 @@ There are several arguments to configure both attacks and defenses.
 | `attack_method` | Specific type of attack |
 | `n_iter` | The number of update iterations of the attack |
 | `eot` | The number of EOT (Expectation Over Transformation) samples |
-| `def_max_timesteps` | The number of forward diffusion steps of the defender |
-| `def_num_denoising_steps` | The number of reverse sampling steps of the defender |
-| `def_sampling_method` | The sampling method of the defender |
-| `def_guidance` | The condition guidance of the defender |
-| `att_max_timesteps` | The number of forward diffusion steps of the attacker |
-| `att_num_denoising_steps` | The number of reverse sampling steps of the attacker |
-| `att_sampling_method` | The sampling method of the attacker |
-| `att_guidance` | The condition guidance of the attacker |
-
-
-`attack_method` specifies the chosen attack. `n_iter` and `eot` determine the number of update iterations and EOT (Expectation Over Transformation) samples, respectively. In our experiments, since the surrogate process in an attack might require different purification settings, separate arguments are used for specifying these details. For defense, `def_max_timesteps`, `def_num_denoising_steps`, `def_sampling_method`, and `def_guidance` determine the number of forward steps, the number of denoising steps, the sampling method, and the condition guidance, respectively. For attack, `att_max_timesteps`, `att_num_denoising_steps`, `att_sampling_method`, and `att_guidance` are used.
+| `def_max_timesteps` | The number of forward diffusion steps of the defend |
+| `def_num_denoising_steps` | The number of reverse sampling steps of the defend |
+| `def_sampling_method` | The sampling method of the defend |
+| `def_guidance` | The condition guidance of the defend |
+| `att_max_timesteps` | The number of forward diffusion steps of the attack |
+| `att_num_denoising_steps` | The number of reverse sampling steps of the attack |
+| `att_sampling_method` | The sampling method of the attack |
+| `att_guidance` | The condition guidance of the attack |
 
 After configuring the arguments, run the following commands:
 ```shell
