@@ -62,13 +62,10 @@ python test.py
 ## Cite
 If this repo helps you, please consider citing our work:
 ```
-@misc{zhang2024randomsamplingdiffusionbasedadversarial,
-      title={Random Sampling for Diffusion-based Adversarial Purification}, 
-      author={Jiancheng Zhang and Peiran Dong and Yongyong Chen and Yin-Ping Zhao and Song Guo},
-      year={2024},
-      eprint={2411.18956},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.18956}, 
+@article{zhang2024random,
+  title={Random Sampling for Diffusion-based Adversarial Purification},
+  author={Zhang, Jiancheng and Dong, Peiran and Chen, Yongyong and Zhao, Yin-Ping and Guo, Song},
+  journal={arXiv preprint arXiv:2411.18956},
+  year={2024}
 }
 ```
