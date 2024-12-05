@@ -1,3 +1,3 @@
 diffusion_model_path = {
-    'cifar10': 'D:/RandomSampling/checkpoint_8.pth',
+    'cifar10': './checkpoint_8.pth',
 }
