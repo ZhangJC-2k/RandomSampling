@@ -35,7 +35,13 @@ Conceptual illustration of the sampling trajectory of three different diffusion 
   ```
 
 ## 2.Prepare Pretrained models and data
-Before running our code, download the necessary pre-trained models and dataset. For CIFAR-10, we use the diffusion model identical to those in [DiffPure](https://github.com/NVlabs/DiffPure#requirements), which is available in [ScoreSDE](https://github.com/yang-song/score_sde_pytorch). We also use pre-trained classifiers, and for CIFAR-10, you don't need to download the models. After downloading the models and dataset, you must update their path in 'path.py'.
+Download the identical pre-trained diffusion models of [DiffPure](https://github.com/NVlabs/DiffPure#requirements) from [ScoreSDE](https://github.com/yang-song/score_sde_pytorch) then update the following path in 'path.py' if necessary:
+ ```
+diffusion_model_path = {
+    'cifar10': './checkpoint_8.pth',
+}
+ ```
+For CIFAR-10, you don't need to manually download the classifiers and datasets, which will be automatically downloaded when the code is first run.
 
 ## 3.Test
 There are several arguments to configure both attacks and defenses. 
